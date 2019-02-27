@@ -1,8 +1,8 @@
 # JX-Docs-Material Theme
 
-Material-Design is a simple material design theme for [Hugo](http://gohugo.io/).
+JX Docs Material is a clean material design theme for [Hugo](http://gohugo.io/) used by the Jenkins X docs site.
 
-![](https://github.com/pdevty/material-design/blob/master/images/tn.png)
+![](https://github.com/SharePointOscar/jx-docs-theme/blob/master/static/images/jx-docs-material.png)
 
 demo : [http://pdevty.github.io/blog/](http://pdevty.github.io/blog/)
 
