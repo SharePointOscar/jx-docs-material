@@ -1,0 +1,165 @@
+.body {
+    padding:70px 0px;
+}
+
+#jx-name {
+    font-weight: 400;
+}
+/* Jumbotron (hero) */
+.jumbotron h1, .jumbotron {
+    color: var(--dark-dar);
+    font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3.2rem;
+    margin: 0 0 10px;
+    color:#2c3e50;
+}
+.jumbotron .lead {
+    font-weight: 300;
+}
+
+/* Custom button */
+.jumbotron .btn-primary {
+    background: var(--green);
+    border: 0;
+    
+    &:hover {
+     background: darken(#1096fc, 7%);
+    }
+}
+
+#read_docs.btn-primary {
+    background: transparent;
+    color: var(--dark-light);
+}
+
+   /* Features */
+.sec-features {
+    .row { 
+     &:nth-of-type(n+2) {
+      margin-top: 160px;
+     }
+    
+     &:last-of-type {
+      margin-bottom: 160px;
+     }
+    }
+    
+    .feature-icon {
+     max-width: 150px;
+    }
+
+}
+   
+   h4,
+.sec-features .h4 {
+  font-size: 2.1rem;
+  color:var(--dark-light);
+}
+
+
+
+
+#hero,
+#news {
+
+  background-color: #fff;
+}
+#hero .inner,
+#news .inner {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+#hero .left,
+#news .left,
+#hero .right,
+#news .right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#hero .right,
+#news .right {
+  width: 100%;
+}
+
+#hero h1,
+#news h1 {
+  font-weight: 300;
+  margin: 0;
+  font-size: 3.2em;
+}
+#hero h2,
+#news h2 {
+  font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 2.4em;
+  margin: 0 0 10px;
+  display: none;
+}
+#hero .button{
+  margin: 1em 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  min-width: 8em;
+  text-align: center;
+}
+#hero .button:not(:last-child),
+#news .button:not(:last-child) {
+  margin-right: 1%;
+}
+#hero .social-buttons,
+#news .social-buttons {
+  list-style-type: none;
+  padding: 0;
+}
+#hero .social-buttons li,
+#news .social-buttons li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+a.button,
+input.button {
+  padding: 0.75em 2em;
+  border-radius: 2em;
+  display: inline-block;
+  color: #fff;
+  background-color: #4fc08d;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  border: 1px solid #4fc08d;
+}
+a.button.has-icon,
+input.button.has-icon {
+  position: relative;
+  text-indent: 1.4em;
+  font-size: 1.2em;
+}
+a.button.has-icon > svg,
+input.button.has-icon > svg {
+  position: absolute;
+  left: 0.4em;
+  top: 0.4em;
+  width: 2em;
+}
+a.button.white,
+input.button.white {
+  background-color: #fff;
+  color: var(--blue);
+  border-color: var(--blue);
+}
+a.button.gray,
+input.button.gray {
+  background-color: #f6f6f6;
+  color: #7f8c8d;
+  border-color: #f6f6f6;
+}
+
+#modal-player {
+
+    background-color: var(--danger);
+    border: 0px;
+}

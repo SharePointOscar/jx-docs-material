@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Jx Docs Material"
+license = "MIT"
+licenselink = "https://github.com/SharePointOscar/jx-docs-material/blob/master/LICENSE"
+description = "A Material UI based theme for Jenkinx X Docs."
+homepage = "http://example.com/"
+tags = ["Material Theme","Docs Theme"]
+features = ["Material UI"]
+min_version = "0.41"
+
+[author]
+  name = "Oscar Medina @SharePointOscar"
+  homepage = "https://sharepointocar.github.io"
