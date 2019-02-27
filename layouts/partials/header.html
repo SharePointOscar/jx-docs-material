@@ -5,12 +5,28 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
       <a class="navbar-brand" href="{{ "/" | relURL}}"><img src="{{ .Site.BaseURL }}images/sirJenkinsFlat.png" width="30" height="30" alt=""></a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-        <li class="navbar-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
-          <a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-        </li>
+      {{ $currentPage := . }}   
+        {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+                <li class="nav-item dropdown {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ .Name }}
+                  </a>
+                  {{ range .Children }}
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                      </div>
+                  {{ end }}
+                </li>
+            {{ else }}
+              <li class="navbar-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+                  <a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>        
+              </li>
+            {{ end }}
       {{ end }}
+
+
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
