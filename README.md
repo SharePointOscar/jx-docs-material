@@ -4,16 +4,17 @@ JX Docs Material is a clean material design theme for [Hugo](http://gohugo.io/) 
 
 ![](https://github.com/SharePointOscar/jx-docs-theme/blob/master/static/images/jx-docs-material.png)
 
-demo : [http://pdevty.github.io/blog/](http://pdevty.github.io/blog/)
+# Demo
+There will be a running demo soon.
 
 ## Features
 
-- Simple Material Design by [Materialize](http://materializecss.com/)
-- Google Analytics (optional)
+- Simple Material Design by [Material](http://daemonite.github.io/material)
+- Google Analytics (to be implemented)
 - Pagination
 - Tags
 - Categories
-- Highlighting source code
+- Highlighting source code (to be implemented)
 
 ## Installation
 
