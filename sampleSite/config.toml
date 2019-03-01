@@ -1,0 +1,37 @@
+baseURL = "http://sposcar.org/"
+title = "Jeninks X Docs BETA"
+
+# Copyright, appears in the footer
+copyright = "© 2019 Copyright Jenkins X"
+
+theme = "jx-docs-material"
+MetaDataFormat = "toml"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "learn"
+    name = "Learn"
+    url = "/learn/"
+
+  [[menu.main]]
+    parent = "learn"
+    identifier = "gettingstarted"
+    name = "Getting Started"
+    url = "/learn/gettingstarted/"
+
+  [[menu.main]]
+    parent = "learn"
+    identifier = "reference"
+    name = "Reference"
+    url = "/learn/reference/"
+
+  [[menu.main]]
+    identifier = "Docs"
+    name = "Docs"
+    url = "/docs/"
+
+    [[menu.main]]
+    identifier = "Community"
+    name = "Community"
+    url = "/community/"
